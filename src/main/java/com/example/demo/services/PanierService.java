@@ -13,6 +13,14 @@ public class PanierService {
 
         produitList.forEach(produit -> panier.getProduitList().add(produit));
         return panier;
+
+    }
+
+    private Panier removeProduit(Panier panier, List<Produit>produitList){
+
+        produitList.forEach(produit -> panier.getProduitList().remove(produit));
+        return panier;
+
     }
 
 }
